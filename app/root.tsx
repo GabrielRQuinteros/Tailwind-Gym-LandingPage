@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -21,6 +22,19 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
+  {
+    rel: "stylesheet",
+    href: "https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+  },
+  {
+    rel: "stylesheet",
+    href: "https://cdn.boxicons.com/fonts/transformations.min.css"
+  }, 
+  {
+    rel: 'icon',
+    type: 'image/svg+xml',
+    href: 'public/gympage-icon.svg'
+  }
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -32,7 +46,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-white text-gray-800" >
         {children}
         <ScrollRestoration />
         <Scripts />

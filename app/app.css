@@ -1,4 +1,7 @@
 @import "tailwindcss";
+/* @plugin "@tailwindcss/line-clamp"; */
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
@@ -12,4 +15,9 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+
+.button {
+  @apply px-3 py-2 text-purple-700 bg-purple-100 font-semibold rounded-lg;
 }
