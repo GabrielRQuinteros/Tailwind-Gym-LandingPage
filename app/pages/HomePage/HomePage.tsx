@@ -326,6 +326,7 @@ export const HomePage = () => {
             </div>
           </div>
         </section>
+        
       </main>
     </>
   );
