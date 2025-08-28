@@ -33,7 +33,7 @@ export const links: Route.LinksFunction = () => [
   {
     rel: 'icon',
     type: 'image/svg+xml',
-    href: 'public/gympage-icon.svg'
+    href: 'gympage-icon.svg'
   }
 ];
 
